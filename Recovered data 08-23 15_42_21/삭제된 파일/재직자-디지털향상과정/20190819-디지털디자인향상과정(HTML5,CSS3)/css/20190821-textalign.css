@@ -1,0 +1,35 @@
+body{
+    background-color: blue;
+}
+*{
+                font-size: 20px;
+            }
+/*            * -= 전체 선택자
+            요소안에 *를 사용했다면 해당 요소 안에 모든 자식 요소를 선택한다. */
+            .a{
+                text-align: left;
+/*                left = 왼쪽 정렬 (기본값)*/
+            }
+            .b{
+                text-align: center;
+/*                center = 가운데 정렬*/
+            }
+            .c{
+                text-align: right;
+/*                right = 오른쪽 정렬*/
+            }
+            .d{
+                text-align: justify;
+/*                justify = 양쪽정렬 */
+            }
+            p{
+                text-align: center;
+                background-color: forestgreen;
+                width: 400px;
+            }
+            span{
+                text-align: center;
+                width: 400px;
+                display: block;
+                background-color: dodgerblue;
+            }

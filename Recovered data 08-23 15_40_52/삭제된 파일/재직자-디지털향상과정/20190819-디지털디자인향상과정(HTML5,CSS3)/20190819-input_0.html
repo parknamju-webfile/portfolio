@@ -1,0 +1,22 @@
+<!-- 20190819-input.html-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>20190819-input.html</title>
+    </head>
+    <body>
+        <label>ID :</label> <input type="text" placeholder="아이디를 입력해주세요">
+        <label>PW :</label> <input type="password" placeholder="패스워드를 입력해주세요">
+        <input type="button" value="로그인" onclick="alert('현재는 이용이 불가능합니다.')">
+        <input type="checkbox" id="ch1"><label for="ch1">체크박스1</label>
+        <input type="checkbox">체크박스2
+        <input type="checkbox">체크박스3
+        <input type="checkbox">체크박스4
+<!--        checkbox / radio 속성인 id 값과 label의 속성인 for 값이 동일하면 글자와 체크박스 / 라디오 박스가 연동된다. -->
+   <input type="radio" name="abc" id="rad1" disabled><label for="rad1">라디오1</label>
+   <input type="radio" name="abc" id="rad2"><label for="rad2">라디오2</label>
+   <input type="radio" name="abc" id="rad3" checked><label for="rad3">라디오3</label>
+<!--   radio 의 경우 checkbox와 다르게 다중 선택이 되면 안되므로 그룹으로 묶기 위해 name을 동일하게 작성한다. -->
+   <input type="file">
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!-- 20190821-cssbasic.html-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>20190821-cssbasic.html</title>
+        <style>
+
+            div{
+                width: 100%;
+/*
+                height: 400px;
+                background-color: forestgreen;
+*/
+            }
+            div h1{
+                color: dodgerblue;
+                font-weight: lighter;
+            }
+            div .bold{
+                font-weight: bold;
+            }
+            div p{
+                background-color: darkturquoise;
+            }
+            div .size{
+                background-color : fuchsia;
+            }
+            div span{
+                font-size: 20px!important;
+            }
+            #size{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .box1{
+                background-color: dodgerblue;
+            }
+            .box1 a{
+                text-decoration: none;
+                color: #000;
+            }
+            .box1 .a{
+                font-size: 20px;
+            }
+            .box1 .img{
+                width: 300px;
+            }
+            .box2{
+                background-color: #fff;
+                width: 500px;
+                height: 500px;
+                border: 1px solid #ccc;
+            }
+            .box2 .top{
+                height: 400px;
+            }
+            .box2 .bottom{
+                height: 100px;
+            }
+            .box2 .bottom p{
+                text-align: center;
+            }
+            .box2 .bottom h3{
+                text-align: center;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      width - 가로 / height - 세로*/
+            }
+
+            /*            선택자{속성: 속성값;}
+            반드시 속성값을 작성후 ; 을 작성한다. */
+
+
+/*         css의 경우는 자식 선택자와 자손 선택자가 있으며, 자식 선택자의 경우는 바로 한단계 까지만 적용이 되며, 자손 선택자의 경우는 아래의 모든 자손을 다 적용한다.
+
+실제로 해당 클래스를 적용하기 위해서는 부모요소부터 차례로 내려오는 것을 권장하며
+            . = 클래스 선택자
+            # = 아이디 선택자
+            요소 = 요소 선택자(a / span / p)
+
+
+요소 선택자를 적용하게 되면, 클래스 + 아이디를 적용했더라도 기본값은 그대로 따라오므로 별도의 설정은 하는 것은 가급적 자제한다.
+또한 클래스 선택자는 중복이 가능하며, 중첩으로 적용도 가능하다.
+아이디 선택자의 경우는 중복으로 사용이 불가능하며, 한번만 선언이 가능하다(실제로는 동작은 하지만 웹표준 검사시 오류 발생)
+div의 경우 실제로는 영역을 100%을 가지고 있는 블록 요소이며 별도의 기능을 가지고 있지 않다. div 를 통해 영역을 분할해서 레이아웃을 구성하며, 해당 div 안에 속해있느냐 밖에 속해 있느냐의 따라서 결과값은 달라진다.
+
+또한 css의 경우는 선택자의 선택명이 중요하므로 오타 및 정확한 선택자를 선택하는 것을 권장.
+
+css의 경우는 우선순위는 하위에 있으며, 같은 값이라면 하단의 css 값을 적용한다.
+만약 우선순위를 무시해야 하는 경우라면 해당 속성값에 !important를 적용하게 되면 우선순위를 무시한다.
+            */
+
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <h1 class="bold">Lorem ipsum dolor sit amet.</h1>
+            <p class="size">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <span id="size">Lorem ipsum dolor.</span>
+        </div>
+        <div class="box1">
+            <a href="#" class="a" id="a">링크</a>
+            <img src="http://placehold.it/120x70" alt="120x70" class="img">
+        </div>
+        <div class="box2">
+            <div class="top">
+                <img src="http://placehold.it/500x400" alt="500x400">
+            </div>
+            <div class="bottom">
+                <h3>Lorem ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </body>
+</html>

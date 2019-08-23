@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .box {
+				box-sizing: border-box;
+				width: 16px;
+				height: 16px;
+				margin: 10px 0px;
+				background-color: orange;
+				transition-property: all;
+				transition-duration: 4s;
+			}
+			input:checked ~ .box {
+				width: 100%;
+			}
+			.jb1 {
+				transition-timing-function: ease;
+			}
+			.jb2 {
+				transition-timing-function: linear;
+			}
+			.jb3 {
+				transition-timing-function: ease-in;
+			}
+			.jb4 {
+				transition-timing-function: ease-out;
+			}
+			.jb5 {
+				transition-timing-function: ease-in-out;
+			}
+			.jb6 {
+				transition-timing-function: step-start;
+			}
+			.jb7 {
+				transition-timing-function: step-end;
+			}
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+		<p>ease</p>
+		<div class="box jb1"></div>
+		<p>linear</p>
+		<div class="box jb2"></div>
+		<p>ease-in</p>
+		<div class="box jb3"></div>
+		<p>ease-out</p>
+		<div class="box jb4"></div>
+		<p>ease-in-out</p>
+		<div class="box jb5"></div>
+		<p>step-start</p>
+		<div class="box jb6"></div>
+		<p>step-end</p>
+		<div class="box jb7"></div>
+</body>
+</html>
